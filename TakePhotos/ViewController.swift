@@ -81,6 +81,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             // Do something with the URL
             print(URL.absoluteString)
         }
+
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController)
